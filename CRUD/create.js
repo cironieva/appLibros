@@ -26,6 +26,9 @@ process.stdin.on('data', (data) => {
 
       var dataBase = jsFile.jsFile();
 
+      // ¿Como se resuelve si se elimina el primer libro del array y luego se añade uno nuevo? Agregando IDs mediante el length y nada más, haría que se repitan
+      // IDs en este caso.
+      // Habría que chequear mediante un filter o find la prexistencia del ID que busca asignarse y modificarlo o no en consecuencia.
       dataBase.push(
         {
           title:awnsers[0],
